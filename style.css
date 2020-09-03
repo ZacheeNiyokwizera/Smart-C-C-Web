@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #eee;
+}
+
+.navbar {
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffc330;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.brand-logo img {
+    width: 50%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* Styling the FOOTER */
+
+.foo {
+    margin-top: 870px;
+    position: static;
+    width: 100%;
+    height: 16%;
+    background-color: #555;
+}
+
+.low-logo {
+    padding-top: 20px;
+    float: left;
+    margin-left: 40px;
+}
+
+.low-logo img {
+    width: 50%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.social-list {
+    float: right;
+    /* display: inline; */
+    margin-right: 30px;
+    padding-top: 30px;
+}
+
+.social-list i:hover {
+    color: #eee;
+}
+
+.social-list i {
+    margin-left: 30px;
+    width: 30px;
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        height: 120px;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/* on laptops */
+
+@media only screen and (max-width: 1100px) {
+    .foo {
+        margin-top: 3000px;
+        position: static;
+    }
+    .selectBox {
+        display: inline-block;
+        height: 30px;
+        margin-left: 5px;
+        font-size: medium;
+    }
+    .search-bar {
+        width: 65%;
+        padding: 10px;
+        height: 18%;
+    }
+    .meet-d-team {
+        width: 120%;
+        margin-left: -100px;
+        /* padding: 0 20%; */
+    }
+}
+
+
+/* small devices  */
+
+@media only screen and (max-width: 700px) {
+    .foo {
+        position: static;
+        margin-top: 4800px;
+    }
+    .selectBox {
+        align-items: center;
+        display: block;
+        margin-top: 5px;
+        font-size: small;
+        width: 90px;
+    }
+    .search-bar {
+        height: 140px;
+        width: 140px;
+    }
+    .meet-d-team {
+        width: 100%;
+        margin-left: -5px;
+        height: 110%;
+    }
+    .meet-d-team h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .social-list i {
+        margin-left: 20px;
+        width: 20px;
+        color: #333;
+    }
+    .low-logo {
+        padding-top: 5px;
+        float: left;
+        margin-left: 40px;
+    }
+    .col-md-3 h5 {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .foo {
+        position: static;
+        margin-top: 5500px;
+    }
+    .meet-d-team {
+        width: 100%;
+        margin-left: 0;
+        height: 110%;
+    }
+}
+
+
+/* Change styles for cancel button and sign up button on extra small screens */
+
+@media screen and (max-width: 350px) {
+    .foo {
+        position: static;
+        margin-top: 12000px;
+        height: 25%;
+    }
+}
