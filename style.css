@@ -74,8 +74,8 @@ p {
 
 .brand img {
     border-radius: 8px;
-    width: 70%;
-    height: 70px;
+    width: 85%;
+    height: 90px;
     margin-top: 5px;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 #header .header {
-    min-height: 8vh;
+    min-height: 13vh;
     background-color: #29323c;
     transition: .3s ease background-color;
 }
@@ -284,7 +284,6 @@ p {
 /* Services Section */
 
 #services {
-    background-image: url(services-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
@@ -332,7 +331,7 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #9ACD32;
+    background-color: #1E90FF;
     opacity: .9;
     z-index: -1;
 }
@@ -369,9 +368,9 @@ p {
 
 #projects .projects {
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    /* padding: 100px 0; */
+    padding: 100px 0;
 }
 
 #projects .projects-header h1 {
@@ -391,14 +390,11 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 80%;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     overflow: hidden;
-    border-radius: 10px;
 }
 
 #projects .project-info {
-    padding: -80px;
-    flex-basis: 50%;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -408,7 +404,7 @@ p {
 
 #projects .project-img {
     flex-basis: 50%;
-    height: 300px;
+    height: 150%;
     overflow: hidden;
     position: relative;
 }
@@ -422,12 +418,11 @@ p {
     width: 100%;
 }
 
-#projects .project-img img {
-    transition: .3s ease transform;
-}
-
-#projects .project-item:hover .project-img img {
-    transform: scale(1.1);
+.project-img img {
+    height: 120%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #9ACD32;
 }
 
 
@@ -495,12 +490,13 @@ p {
 
 /* contact Section */
 
-#contact {
-    background-image: url(contact-bg.jpg);
+
+/* #contact {
+    background-image: url(services-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+} */
 
 
 /* background-size: cover;
@@ -517,7 +513,7 @@ z-index: 1; */
 
 .contact-item {
     width: 400px;
-    background-color: #9ACD32;
+    background-color: dodgerblue;
 }
 
 #contact .contact-item {
@@ -565,7 +561,7 @@ z-index: 1; */
 
 .wrapper {
     margin-top: 25px;
-    background-image: url(team-bg.jpg);
+    background-image: url(house-cleaning.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -589,7 +585,7 @@ z-index: 1; */
 }
 
 .team .team_member {
-    background: #9ACD32;
+    background: dodgerblue;
     margin: 5px;
     margin-bottom: 50px;
     width: 400px;
@@ -677,7 +673,8 @@ z-index: 1; */
     filter: grayscale(0);
 }
 
-#footer p {
+#footer p,
+h1 {
     color: white;
     font-size: 1.3rem;
 }
