@@ -312,25 +312,72 @@ p {
     background-position: top center;
     position: relative;
     z-index: 1;
-    animation: home-bg 80s infinite;
+    /* animation: home-bg 80s infinite; */
 }
 
-@keyframes home-bg {
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 2000px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+@-webkit-keyframes slide_animation {
     0% {
-        background-image: url(bg.jpg);
+        left: 0px;
     }
-    25% {
-        background-image: url(house-cleaning.jpg);
+    10% {
+        left: 0px;
+    }
+    20% {
+        left: 1200px;
+    }
+    30% {
+        left: 1200px;
+    }
+    40% {
+        left: 2400px;
     }
     50% {
-        background-image: url(bg2.jpg);
+        left: 2400px;
     }
-    75% {
-        background-image: url(pic4.jpg);
+    60% {
+        left: 1200px;
+    }
+    70% {
+        left: 1200px;
+    }
+    80% {
+        left: 0px;
+    }
+    90% {
+        left: 0px;
     }
     100% {
-        background-image: url(pic3.jpg);
+        left: 0px;
     }
+}
+
+.slide-images {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    width: 5000px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 23s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container {
+    height: 700px;
+    width: 2000px;
+    position: relative;
+    float: left;
 }
 
 #hero .hero {
