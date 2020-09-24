@@ -52,7 +52,7 @@ p {
     color: #9acd32;
 }
 
-.cta {
+/* .cta {
     display: inline-block;
     padding: 10px 30px;
     color: #fff;
@@ -64,12 +64,12 @@ p {
     margin-top: 30px;
     transition: 0.3s ease;
     transition-property: background-color, color;
-}
+} */
 
-.cta:hover {
+/* .cta:hover {
     color: white;
     background-color: #9acd32;
-}
+} */
 
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 * {
@@ -142,8 +142,8 @@ p {
 
 .brand img {
     border-radius: 8px;
-    width: 75%;
-    height: 50%;
+    width: 30%;
+    height: 12%;
     margin-top: 5px;
     margin-left: -30px;
 }
@@ -162,7 +162,7 @@ p {
 
 #header .header {
     min-height: 13vh;
-    background-color: #29323c;
+    background-color: #160460;
     transition: 0.3s ease background-color;
 }
 
@@ -308,24 +308,23 @@ p {
     background-position: top center;
     position: relative;
     z-index: 1;
-    /* animation: home-bg 80s infinite; */
+   
 }
 
 .slider-frame {
     overflow: hidden;
-    height: 800px;
-    width: 2000px;
-    margin-top: 100px;
-    margin-left: 20px;
+    height: 1000px;
+    margin-top:50px;
+   background-color: #041058;
 }
 
 @-webkit-keyframes slide_animation {
     0% {
         left: 0px;
-    }
+    } 
     10% {
         left: 0px;
-    }
+    } 
     20% {
         left: 1200px;
     }
@@ -358,22 +357,28 @@ p {
 .slide-images {
     display: flex;
     flex-direction: row;
-    height: 700px;
+    height: 1500px;
     width: 5000px;
     margin: 0 0 0 -2400px;
     position: relative;
+    overflow: hidden;
     -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 23s;
+    -webkit-animation-duration: 13s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 }
 
 .img-container {
-    height: 700px;
-    width: 2000px;
+    height: 1200px;
+    width: 1500px;
     position: relative;
     float: left;
+    
+}
+.img-container img {
+    width: 110%;
+    padding:50px;
 }
 
 #hero .hero {
@@ -403,11 +408,6 @@ p {
 #services {
     margin-top: 50px;
     background-color: white;
-    /* background-image: url("services_bg.jpg"); */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
 }
 
 #services .services {
@@ -462,7 +462,7 @@ p {
 
 #services .service-bottom .icon {
     height: 100%;
-    width: 100%;
+    width: 120%;
     padding: -75px;
     margin-right: 20px;
 }
@@ -491,75 +491,6 @@ p {
 
 
 /* End Services Section */
-
-
-/* Projects section */
-
-#projects {
-    margin-top: 50px;
-}
-
-#projects .projects {
-    flex-direction: column;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-#projects .projects-header h1 {
-    margin-bottom: 50px;
-}
-
-#projects .all-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#projects .project-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    /* margin: 20px auto; */
-    overflow: hidden;
-}
-
-#projects .project-info {
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#projects .project-img {
-    flex-basis: 50%;
-    height: 150%;
-    overflow: hidden;
-    position: relative;
-}
-
-#projects .project-img:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.project-img img {
-    height: 120%;
-    border-style: solid;
-    border-width: medium;
-    border-color: #fff;
-}
-
-
-/* End Projects section */
 
 
 /* About Section */
@@ -627,69 +558,193 @@ p {
 
 /* contact Section */
 
-#contact {
-    background-image: url(contact-us-bg.jpg);
+/* #contact {
+    b
     background-attachment: fixed;
-    background-repeat: no-repeat;
+  
     z-index: 1;
-    background-position: center;
-}
+ 
+} */
 
-#contact .contact {
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact-item {
-    width: 400px;
-    background-color: dodgerblue;
-}
-
-.section-title h1 {
-    margin-bottom: 75px;
-    font-size: 6rem;
-    font-weight: 500;
-    color: #000;
-}
-
-#contact .contact-item {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 30px;
+#contact {
+    width: 100%;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .contact-wrapper {
+    width: 70%;
+    height: 50rem;
+    display: flex;
+    padding: -50px;
+    background-image: url('contact-us-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+ 
+    z-index: 1;  
+}
+
+  
+  .contact-left {
+    width: 35%;
+  }
+  
+  .contact-right {
+    width: 65%;
+    padding: 3rem 10rem 10rem 10rem;
+   
+  }
+  
+  .contact-heading {
+    font-family: "Baloo Da 2", serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #272727;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  
+  .contact-right form {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 18px 0 #29323c;
-    transition: 0.3s ease box-shadow;
-}
+    align-items: center;
+    background-color: grey;
+   
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .field {
+    width: 45rem;
+    background-color:transparent;
+    border: none;
+    border-bottom: 0.2rem dashed #636363;
+    margin: 3rem 0;
+    padding: 1rem 1rem 1rem 0;
+    font-family: "Muli", serif;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  
+  .input-group input {
+    height: 4rem;
+  }
+  
+  .input-group textarea {
+    max-height: 7rem;
+    max-width: 45rem;
+  }
+  
+  .field:focus {
+    border-bottom-style: solid;
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 0;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .input-label {
+    bottom: 5rem;
+  }
+  
+  .message {
+    bottom: 6rem;
+  }
+  
+  .field:focus ~ label {
+    transform: translateY(-3rem);
+    font-size: 1.2rem;
+  }
+  
+  .submit-btn {
+    width: 45rem;
+    height: 5rem;
+    background-color: #9acd32;
+    color: #fff;
+    border: none;
+    margin-top: 2rem;
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  }
+  .whatsapp-btn {
+    width: 45rem;
+    height: 5rem;
+    background-color: #4AC959;
+    color: #fff;
+    border: none;
+    margin-top: 2rem;
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  form a {
+      margin-top: 30px;
+  }
+  @media (max-width: 1500px) {
+   
+    .contact-wrapper {
+      width: 80%;
+      height: 65rem;
+    }
+  
+  }
+  
 
-#contact .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 #29323c;
-}
+  @media (max-width: 1000px) {
+    
+    .contact-left {
+      width: 0;
+    }
 
-#contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
+    .contact-right {
+      width: 100%;
+    }
+  
+    .input-group textarea {
+      max-width: 55rem;
+    }
 
-#contact .contact-info h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
+  }
+  
+  @media (max-width: 700px) {
 
-#contact .contact-info h2 {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    font-weight: 500;
-}
-
+    .field {
+      width: 35rem;
+    }
+  
+    .input-group textarea {
+      max-width: 35rem;
+    }
+  
+    .submit-btn {
+      width: 35rem;
+    }
+  }
+  
+   
 
 /*End contact Section */
 
@@ -784,7 +839,7 @@ p {
 /* Footer */
 
 #footer {
-    background-color: #29323c;
+    background-color: #041058;
 }
 
 #footer .footer {
