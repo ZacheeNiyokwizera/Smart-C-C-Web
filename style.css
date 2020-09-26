@@ -534,7 +534,7 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid #fff;
+    border: 10px solid #160460;
 }
 
 #about .col-left .about-img::after {
@@ -544,7 +544,7 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid #9acd32;
+    border: 7px solid #041058;
     z-index: -1;
 }
 
@@ -668,23 +668,8 @@ p {
     font-size: 1.2rem;
   }
   
+  
   .submit-btn {
-    width: 45rem;
-    height: 5rem;
-    background-color: #9acd32;
-    color: #fff;
-    border: none;
-    margin-top: 2rem;
-    font-family: "Muli", serif;
-    font-size: 2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    cursor: pointer;
-    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-  }
-  .whatsapp-btn {
     width: 45rem;
     height: 5rem;
     background-color: #4AC959;
@@ -843,7 +828,7 @@ p {
 }
 
 #footer .footer {
-    min-height: 200px;
+    min-height: 130px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -950,26 +935,7 @@ h1 {
         margin: 2.5%;
     }
     /* End Services Section */
-    /* Project */
-    #projects .project-item {
-        flex-direction: row;
-    }
-    #projects .project-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    #projects .project-item {
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-    #projects .all-projects .project-info {
-        height: 100%;
-    }
-    #projects .all-projects .project-img {
-        height: 100%;
-    }
-    /* End Project */
+    
     /* About */
     #about .about {
         flex-direction: row;
@@ -1027,6 +993,11 @@ h1 {
         padding-left: 20px;
     }
     /* End contact  */
+
+    #footer .footer {
+        min-height: 110px;
+       
+    }
 }
 
 
