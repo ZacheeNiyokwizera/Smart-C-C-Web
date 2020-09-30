@@ -27,7 +27,7 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-} 
+}
 
 p {
     color: #29323c;
@@ -52,6 +52,7 @@ p {
     color: #9acd32;
 }
 
+
 /* .cta {
     display: inline-block;
     padding: 10px 30px;
@@ -65,6 +66,7 @@ p {
     transition: 0.3s ease;
     transition-property: background-color, color;
 } */
+
 
 /* .cta:hover {
     color: white;
@@ -95,8 +97,6 @@ a {
     align-items: center;
     justify-content: center;
 }
-
-
 
 p {
     color: #29323c;
@@ -143,9 +143,9 @@ p {
 .brand img {
     border-radius: 8px;
     width: 30%;
-    height: 12%;
+    height: 15%;
     margin-top: 5px;
-    margin-left: -30px;
+    margin-left: 20px;
 }
 
 
@@ -172,7 +172,7 @@ p {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 1300px;
+    /* max-width: 100%; */
     padding: 0 10px;
 }
 
@@ -182,7 +182,7 @@ p {
     background-color: #29323c;
     width: 100vw;
     height: 100vh;
-    left: 120%;
+    left: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -303,100 +303,53 @@ p {
 
 /* Hero Section */
 
-#hero {
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-   
-}
-
-.slider-frame {
+#slider {
     overflow: hidden;
-    height: 1000px;
-    margin-top:50px;
-   background-color: #041058;
+    height: 20%;
 }
 
-@-webkit-keyframes slide_animation {
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+@keyframes slider {
     0% {
-        left: 0px;
-    } 
-    10% {
-        left: 0px;
-    } 
+        left: 0;
+    }
     20% {
-        left: 1200px;
+        left: 0;
     }
-    30% {
-        left: 1200px;
+    25% {
+        left: -100%;
     }
-    40% {
-        left: 2400px;
+    45% {
+        left: -100%;
     }
     50% {
-        left: 2400px;
-    }
-    60% {
-        left: 1200px;
+        left: -200%;
     }
     70% {
-        left: 1200px;
+        left: -200%;
     }
-    80% {
-        left: 0px;
+    75% {
+        left: -300%;
     }
-    90% {
-        left: 0px;
+    95% {
+        left: -300%;
     }
     100% {
-        left: 0px;
+        left: -400%;
     }
-}
-
-.slide-images {
-    display: flex;
-    flex-direction: row;
-    height: 1500px;
-    width: 5000px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    overflow: hidden;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 13s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-}
-
-.img-container {
-    height: 1200px;
-    width: 1500px;
-    position: relative;
-    float: left;
-    
-}
-.img-container img {
-    width: 110%;
-    padding:50px;
-}
-
-#hero .hero {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 50px;
-    justify-content: flex-start;
-}
-
-.banner h1 {
-    font-family: "Baloo Da 2", serif;
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
-    width: 50%;
-    line-height: 8rem;
-    letter-spacing: 0.2rem;
-    text-shadow: 0 0.3rem 0.5rem #9acd32;
 }
 
 
@@ -553,10 +506,12 @@ p {
     width: 100%;
 }
 
+
 /* End About Section */
 
 
 /* contact Section */
+
 
 /* #contact {
     b
@@ -572,56 +527,52 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .contact-wrapper {
+}
+
+.contact-wrapper {
     width: 70%;
     height: 50rem;
     display: flex;
     padding: -50px;
-    background-image: url('contact-us-bg.jpg');
+    background-image: url("contact-us-bg.jpg");
     background-attachment: fixed;
     background-repeat: repeat;
- 
-    z-index: 1;  
+    z-index: 1;
 }
 
-  
-  .contact-left {
+.contact-left {
     width: 35%;
-  }
-  
-  .contact-right {
+}
+
+.contact-right {
     width: 65%;
     padding: 3rem 10rem 10rem 10rem;
-   
-  }
-  
-  .contact-heading {
+}
+
+.contact-heading {
     font-family: "Baloo Da 2", serif;
     font-size: 6rem;
     font-weight: 300;
     color: #272727;
     margin-bottom: 5rem;
     text-align: center;
-  }
-  
-  .contact-right form {
+}
+
+.contact-right form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: grey;
-   
-  }
-  
-  .input-group {
+}
+
+.input-group {
     position: relative;
-  }
-  
-  .field {
+}
+
+.field {
     width: 45rem;
-    background-color:transparent;
+    background-color: transparent;
     border: none;
     border-bottom: 0.2rem dashed #636363;
     margin: 3rem 0;
@@ -629,22 +580,22 @@ p {
     font-family: "Muli", serif;
     font-size: 1.6rem;
     color: #fff;
-  }
-  
-  .input-group input {
+}
+
+.input-group input {
     height: 4rem;
-  }
-  
-  .input-group textarea {
+}
+
+.input-group textarea {
     max-height: 7rem;
     max-width: 45rem;
-  }
-  
-  .field:focus {
+}
+
+.field:focus {
     border-bottom-style: solid;
-  }
-  
-  .input-group label {
+}
+
+.input-group label {
     position: absolute;
     left: 0;
     font-family: "Baloo Da 2", serif;
@@ -653,26 +604,25 @@ p {
     text-transform: uppercase;
     pointer-events: none;
     transition: all 0.3s;
-  }
-  
-  .input-label {
+}
+
+.input-label {
     bottom: 5rem;
-  }
-  
-  .message {
+}
+
+.message {
     bottom: 6rem;
-  }
-  
-  .field:focus ~ label {
+}
+
+.field:focus~label {
     transform: translateY(-3rem);
     font-size: 1.2rem;
-  }
-  
-  
-  .submit-btn {
+}
+
+.submit-btn {
     width: 45rem;
     height: 5rem;
-    background-color: #4AC959;
+    background-color: #4ac959;
     color: #fff;
     border: none;
     margin-top: 2rem;
@@ -683,53 +633,43 @@ p {
     letter-spacing: 0.2rem;
     cursor: pointer;
     text-align: center;
-  }
-  
-  form a {
-      margin-top: 30px;
-  }
-  @media (max-width: 1500px) {
-   
+}
+
+form a {
+    margin-top: 30px;
+}
+
+@media (max-width: 1500px) {
     .contact-wrapper {
-      width: 80%;
-      height: 65rem;
+        width: 80%;
+        height: 65rem;
     }
-  
-  }
-  
+}
 
-  @media (max-width: 1000px) {
-    
+@media (max-width: 1000px) {
     .contact-left {
-      width: 0;
+        width: 0;
     }
-
     .contact-right {
-      width: 100%;
+        width: 100%;
     }
-  
     .input-group textarea {
-      max-width: 55rem;
+        max-width: 55rem;
     }
+}
 
-  }
-  
-  @media (max-width: 700px) {
-
+@media (max-width: 700px) {
     .field {
-      width: 35rem;
+        width: 35rem;
     }
-  
     .input-group textarea {
-      max-width: 35rem;
+        max-width: 35rem;
     }
-  
     .submit-btn {
-      width: 35rem;
+        width: 35rem;
     }
-  }
-  
-   
+}
+
 
 /*End contact Section */
 
@@ -828,7 +768,7 @@ p {
 }
 
 #footer .footer {
-    min-height: 130px;
+    height: 40%;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -935,7 +875,6 @@ h1 {
         margin: 2.5%;
     }
     /* End Services Section */
-    
     /* About */
     #about .about {
         flex-direction: row;
@@ -993,10 +932,8 @@ h1 {
         padding-left: 20px;
     }
     /* End contact  */
-
     #footer .footer {
         min-height: 110px;
-       
     }
 }
 
@@ -1010,6 +947,9 @@ h1 {
     /* header */
     #header .hamburger {
         display: none;
+    }
+    #header .nav-bar {
+        width: 100%;
     }
     #header .nav-list ul {
         position: initial;
