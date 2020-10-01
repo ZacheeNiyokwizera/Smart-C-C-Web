@@ -939,11 +939,6 @@ h1 {
     #slider {
         margin-top: 110px;
     }
-    #header .nav-list ul {
-        display: flex;
-        height: 50px;
-        width: 100px;
-    }
 }
 
 @media only screen and (min-width: 300px) {
@@ -952,6 +947,11 @@ h1 {
     }
     #slider {
         margin-top: 90px;
+    }
+    #header .nav-list {
+        display: flex;
+        height: 50px;
+        width: 100px;
     }
 }
 
