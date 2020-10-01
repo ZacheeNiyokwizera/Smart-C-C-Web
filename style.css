@@ -934,10 +934,10 @@ h1 {
     }
     /* End contact  */
     #footer .footer {
-        height: 30%;
+        height: 20%;
     }
     #slider {
-        margin-top: 300px;
+        margin-top: 120px;
     }
 }
 
@@ -946,7 +946,7 @@ h1 {
         height: 20%;
     }
     #slider {
-        margin-top: 300px;
+        margin-top: 100px;
     }
 }
 
@@ -961,7 +961,7 @@ h1 {
         left: 0;
     }
     #slider {
-        margin-top: 300px;
+        margin-top: 120px;
     }
 }
 
@@ -976,6 +976,10 @@ h1 {
     #header .nav-bar {
         width: 100%;
     }
+    /* #header .nav-list {
+        display: block;
+        width: fit-content;
+    } */
     #header .nav-list ul {
         position: initial;
         display: block;
