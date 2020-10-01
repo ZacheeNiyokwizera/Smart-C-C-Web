@@ -319,7 +319,7 @@ p {
 #slider figure img {
     width: 20%;
     float: left;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 @keyframes slider {
@@ -579,7 +579,7 @@ p {
     padding: 1rem 1rem 1rem 0;
     font-family: "Muli", serif;
     font-size: 1.6rem;
-    color: #fff;
+    color: #636363;
 }
 
 .input-group input {
@@ -593,6 +593,7 @@ p {
 
 .field:focus {
     border-bottom-style: solid;
+    background-color: #fff;
 }
 
 .input-group label {
@@ -939,6 +940,17 @@ h1 {
 
 
 /* End Media Query For Tablet */
+
+@media only screen and (min-width: 1100px) {
+    #header .nav-list {
+        display: inline-flex;
+        height: auto;
+        width: 100%;
+    }
+    #slider figure {
+        margin-bottom: -50px;
+    }
+}
 
 
 /* Media Query For Desktop */
