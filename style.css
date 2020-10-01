@@ -946,12 +946,12 @@ h1 {
         height: 10%;
     }
     #slider {
-        margin-top: 90px;
+        margin-top: 60px;
     }
     #header .nav-list {
         display: flex;
         height: 50px;
-        width: 100px;
+        width: 1000px;
     }
 }
 
