@@ -942,7 +942,7 @@ h1 {
     #header .nav-list ul {
         position: initial;
         display: block;
-        height: 70px;
+        height: 50px;
         width: fit-content;
         background-color: transparent;
     }
