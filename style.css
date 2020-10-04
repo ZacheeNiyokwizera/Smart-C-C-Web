@@ -1072,7 +1072,7 @@ h1 {
     }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 300px) {
     #footer .footer {
         height: 10%;
     }
