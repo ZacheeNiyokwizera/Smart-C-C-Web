@@ -1,3 +1,68 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyAM-fWm5bSJvnPqC17ra_sRkCX_5IRngO4",
+    authDomain: "smart-cleaning-db-ab48a.firebaseapp.com",
+    databaseURL: "https://smart-cleaning-db-ab48a.firebaseio.com",
+    projectId: "smart-cleaning-db-ab48a",
+    storageBucket: "smart-cleaning-db-ab48a.appspot.com",
+    messagingSenderId: "866300650205",
+    appId: "1:866300650205:web:f48daa90c56b261d337134",
+    measurementId: "G-MGWSM64RZR"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Reference message collection
+var messagesRef = firebase.database().ref("messages");
+
+// Listen for form submit
+document.getElementById("contactForm").addEventListener("submit", submitForm);
+console.log("clicked");
+
+// Submit form
+function submitForm(e) {
+    e.preventDefault();
+
+    // Get values
+    var name = getInputVal("myName");
+    var email = getInputVal("myEmail");
+    var phone = getInputVal("myPhone");
+    var message = getInputVal("myMessage");
+
+    // Save message
+    saveMessage(name, email, phone, message);
+
+    // Show alert
+    document.querySelector(".alert").style.display = "block";
+
+    // Hide alert after 3 seconds
+    setTimeout(function() {
+        document.querySelector(".alert").style.display = "none";
+    }, 3000);
+
+    // Clear form
+    document.getElementById("contactForm").reset();
+}
+
+// Function to get get form values
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, phone, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+    });
+}
+
+// Displaying a humburger on small screens
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -36,25 +101,6 @@ tabs.forEach(function(tab, tab_index) {
 
     })
 })
-
-// Automatic Slideshow - change image every 4 seconds
-// var myIndex = 0;
-// carousel();
-
-// function carousel() {
-//     var i;
-//     var x = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < x.length; i++) {
-//         x[i].style.display = "none";
-//     }
-//     myIndex++;
-//     if (myIndex > x.length) {
-//         myIndex = 1
-//     }
-//     x[myIndex - 1].style.display = "block";
-//     setTimeout(carousel, 4000);
-// }
-
 
 var slideIndex, slides, dots, captionText;
 
