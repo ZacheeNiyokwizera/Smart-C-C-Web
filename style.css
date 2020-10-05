@@ -516,12 +516,10 @@ p {
 /* End Hero Section */
 
 
-/* Services Section */
-
-
 /* Projects section */
 
 #projects .projects {
+    background-color: #fff;
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
@@ -530,7 +528,7 @@ p {
 }
 
 #projects .projects-header h1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #projects .all-projects {
@@ -560,7 +558,7 @@ p {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-color: #07325c;
+    background-color: lightgrey;
     color: white;
 }
 
@@ -572,7 +570,8 @@ p {
 }
 
 #projects .project-info p {
-    color: white;
+    color: black;
+    font-size: 1.7rem;
     text-align: justify;
 }
 
@@ -713,11 +712,11 @@ p {
 .contact-form {
     width: 70rem;
     height: 50rem;
-    background-color: grey;
+    background: lightgrey;
     margin: auto;
     flex-direction: column;
     border-radius: 0.5rem;
-    box-shadow: 0 1rem 3rem #0000;
+    box-shadow: 0rem 0rem 2rem 1rem #07325c;
     padding: 5rem;
 }
 
@@ -742,7 +741,7 @@ p {
 .input-group input,
 .input-group textarea {
     padding: 3rem 1rem 1rem 1rem;
-    background-color: #ccc;
+    background-color: whitesmoke;
     border: 0.1rem solid #ccc;
     font-size: 1.4rem;
     color: #000;
@@ -768,6 +767,7 @@ p {
 }
 
 .form-btn {
+    color: #fff;
     width: 100%;
     padding: 1rem;
     font-size: 1.6rem;
@@ -844,7 +844,7 @@ p {
 /*the team section */
 
 .wrapper {
-    /* background-color: whitesmoke; */
+    background-color: #fff;
 }
 
 #team-members {
@@ -870,19 +870,19 @@ p {
 }
 
 .team .team_member {
-    background: whitesmoke;
+    background: lightgrey;
     margin: 5px;
     margin-bottom: 50px;
     width: 200px;
-    height: 250px;
+    height: 280px;
     padding: 20px;
     line-height: 20px;
-    color: #29323c;
     position: relative;
     border-radius: 10px;
 }
 
 .team .team_member h3 {
+    font-style: italic;
     color: #29323c;
     font-size: 20px;
     text-align: center;
@@ -892,7 +892,6 @@ p {
 #name-box {
     margin-top: 200px;
     height: 25px;
-    box-shadow: 5px 10px 10px 5px grey;
 }
 
 .team .team_member .team_img {
@@ -1074,7 +1073,13 @@ h1 {
 
 @media only screen and (max-width: 300px) {
     #footer .footer {
-        height: 10%;
+        display: flex;
+        min-height: 300px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 10px;
     }
     #slider {
         margin-top: 60px;
