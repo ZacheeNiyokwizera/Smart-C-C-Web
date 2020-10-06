@@ -52,27 +52,6 @@ p {
     color: #9acd32;
 }
 
-
-/* .cta {
-    display: inline-block;
-    padding: 10px 30px;
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid #9acd32;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 30px;
-    transition: 0.3s ease;
-    transition-property: background-color, color;
-} */
-
-
-/* .cta:hover {
-    color: white;
-    background-color: #9acd32;
-} */
-
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 * {
     padding: 0;
@@ -142,10 +121,10 @@ p {
 
 .brand img {
     border-radius: 8px;
-    width: 30%;
+    width: 40%;
     height: 15%;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 
@@ -757,10 +736,10 @@ p {
 
 .input-group label {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: #ccc;
+    color: rgb(117, 117, 117);
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -787,6 +766,7 @@ p {
 .input-group textarea {
     max-height: 15rem;
     max-width: 100%;
+    font-family: "	Arial", sans-serif;
 }
 
 .alert {
@@ -843,14 +823,15 @@ p {
 
 /*the team section */
 
-.wrapper {
+
+/* .wrapper {
     background-color: #fff;
-}
+} */
 
 #team-members {
     margin-top: 100px;
     padding-top: 80px;
-    background-color: whitesmoke;
+    background-color: #fff;
 }
 
 .wrapper h1 {
@@ -902,7 +883,7 @@ p {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    background: greenyellow;
+    background: #fff;
     margin-top: 90px;
 }
 
@@ -934,10 +915,11 @@ p {
 #footer h2 {
     color: white;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 15px;
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: "	Arial", sans-serif;
 }
 
 #footer .social-icon {
@@ -964,11 +946,10 @@ p {
     filter: grayscale(0);
 }
 
-#footer p,
-h1 {
+#footer p {
+    font-size: 17px;
     font-weight: 200;
     color: white;
-    font-size: 2rem;
 }
 
 
@@ -1061,7 +1042,6 @@ h1 {
         text-align: left;
     }
     /* End About */
-    /* contact  */
     /* End contact  */
     #footer .footer {
         height: 10%;
@@ -1097,14 +1077,12 @@ h1 {
         user-select: none;
         box-shadow: 0px 0px 3px 1px #00000078;
         margin-top: -40px;
-        /* padding: 0 10px; */
         box-sizing: border-box;
     }
     .galleryContainer .slideShowContainer {
         width: 50%;
         height: 50%;
         overflow: hidden;
-        /* background-color: #ccc; */
         position: relative;
     }
     .galleryContainer .slideShowContainer .imageHolder {
