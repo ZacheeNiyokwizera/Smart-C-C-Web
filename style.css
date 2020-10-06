@@ -227,7 +227,7 @@ p {
     z-index: 100;
     cursor: pointer;
     transform: scale(0.8);
-    /* margin-right: 20px; */
+    margin-right: 20px;
 }
 
 #header .hamburger:after {
@@ -382,11 +382,11 @@ p {
     bottom: 0;
 }
 
-.galleryContainer .arrow.arrowLeft {
+.galleryContainer .arrow. arrowLeft {
     transform: rotateZ(-135deg);
 }
 
-.galleryContainer .arrow.arrowRight {
+.galleryContainer .arrow .arrowRight {
     transform: rotateZ(45deg);
 }
 
@@ -912,10 +912,20 @@ p {
     padding-bottom: 10px;
 }
 
-#footer h2 {
+.brand h2 {
     color: white;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "	Arial", sans-serif;
+}
+
+.social-words h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -946,10 +956,13 @@ p {
     filter: grayscale(0);
 }
 
-#footer p {
-    font-size: 17px;
-    font-weight: 200;
+.copy-write h2 {
     color: white;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 25px;
+    font-family: "	Arial", sans-serif;
 }
 
 
@@ -1000,10 +1013,6 @@ p {
 /* Media Query For Tablet */
 
 @media only screen and (min-width: 768px) {
-    .cta {
-        font-size: 2.5rem;
-        padding: 20px 60px;
-    }
     h1.section-title {
         font-size: 6rem;
     }
@@ -1097,8 +1106,8 @@ p {
     }
     .brand img {
         border-radius: 8px;
-        width: 20%;
-        height: 10%;
+        width: 30%;
+        height: 15%;
         margin-top: 5px;
         margin-left: 20px;
     }
@@ -1108,6 +1117,9 @@ p {
 /* Media query for tablets */
 
 @media only screen and (max-width: 500px) {
+    #header .hamburger {
+        margin-left: 150px;
+    }
     #footer .footer {
         display: flex;
         min-height: 300px;
@@ -1155,10 +1167,18 @@ p {
     }
     .brand img {
         border-radius: 8px;
-        width: 20%;
-        height: 10%;
+        width: 50%;
+        height: 25%;
         margin-top: 5px;
         margin-left: 20px;
+    }
+    .brand h2 {
+        margin-left: 50px;
+    }
+    .social-words h2 {
+        margin-left: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 
