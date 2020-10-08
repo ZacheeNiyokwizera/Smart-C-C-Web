@@ -1228,9 +1228,14 @@ p {
 
 /* Media Query For Desktop */
 
-@media only screen and (min-width: 900px) {
-    /* header */
-    #header .hamburger {
+
+/* @media only screen and (min-width: 900px) { */
+
+
+/* header */
+
+
+/* #header .hamburger {
         display: none;
     }
     #header .nav-bar {
@@ -1239,8 +1244,11 @@ p {
     #header .nav-list {
         display: block;
         /* width: fit-content; */
-    }
-    #header .nav-list ul {
+
+
+}
+
+/* #header .nav-list ul {
         position: initial;
         display: block;
         height: 70px;
@@ -1257,11 +1265,12 @@ p {
         display: none;
     }
     /* End header */
-    #services .service-bottom .service-item {
+
+/* #services .service-bottom .service-item {
         display: flex;
         flex-wrap: wrap;
-    }
+    } */
+
 }
-
-
+*/ */
 /* End  Media Query For Desktop *
