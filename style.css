@@ -1251,7 +1251,7 @@ p {
         position: initial;
         display: block;
         height: 70px;
-        width: fit-content;
+        width: 560px;
         background-color: transparent;
     }
     #header .nav-list ul li {
