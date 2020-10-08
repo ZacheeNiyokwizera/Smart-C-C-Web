@@ -1188,6 +1188,8 @@ p {
 
 /* End Media Query For phones */
 
+
+/* 
 @media only screen and (min-width: 1100px) {
     #header .nav-list {
         display: inline-flex;
@@ -1201,7 +1203,7 @@ p {
     #footer .footer {
         height: 10%;
     }
-}
+} */
 
 @media only screen and (max-width: 1100px) {
     .galleryContainer {
